@@ -42,3 +42,8 @@ Dynamic Multimodal Fusion via Meta-Learning Towards Micro-Video Recommendation
   ```
   P@10: 0.0595; R@10: 0.2587; HR@10: 0.2003; NDCG@10: 0.1736
   ```
+
+## Dataset
+Please check [MMGCN](https://github.com/weiyinwei/MMGCN) for the datasets: Kwai, Tiktok, and Movielens.
+
+Due to the copyright, we could only provide some toy datasets for validation. If you need the complete ones, please contact the owners of the datasets.
