@@ -29,12 +29,10 @@ Dynamic Multimodal Fusion via Meta-Learning Towards Micro-Video Recommendation
 
   During the execution of file model_train.py, the epoch, iteration, and training loss will be printed as the training process:
   
-    ```
-[1, 500] loss: 0.21953
-[1, 1000] loss: 0.15628
-[1, 1500] loss: 0.13521
-[1, 2000] loss: 0.12699
-[1, 2500] loss: 0.12122
-[1, 3000] loss: 0.11738
+  ```
+  [1, 500] loss: 0.21953
+  [1, 1000] loss: 0.15628
+  [1, 1500] loss: 0.13521
+  [1, 2000] loss: 0.12699
   ...
   ```
