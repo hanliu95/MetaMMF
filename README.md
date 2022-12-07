@@ -19,3 +19,22 @@ Dynamic Multimodal Fusion via Meta-Learning Towards Micro-Video Recommendation
 * cpd_layer.py : the simplified layer of MetaMMF.
 * model_train.py : the training process of model.
 * model_test.py : the testing process of model.
+
+## Usage
+* Execution sequence
+
+  The execution sequence of codes is as follows: data_load.py--->data_triple.py--->model_train.py--->model_test.py
+  
+* Execution results
+
+  During the execution of file model_train.py, the epoch, iteration, and training loss will be printed as the training process:
+  
+    ```
+[1, 500] loss: 0.21953
+[1, 1000] loss: 0.15628
+[1, 1500] loss: 0.13521
+[1, 2000] loss: 0.12699
+[1, 2500] loss: 0.12122
+[1, 3000] loss: 0.11738
+  ...
+  ```
