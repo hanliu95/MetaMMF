@@ -36,3 +36,9 @@ Dynamic Multimodal Fusion via Meta-Learning Towards Micro-Video Recommendation
   [1, 2000] loss: 0.12699
   ...
   ```
+
+  File model_test.py should be executed after the training process, and the performance of HS-GCN will be printed:
+  
+  ```
+  P@10: 0.0595; R@10: 0.2587; HR@10: 0.2003; NDCG@10: 0.1736
+  ```
