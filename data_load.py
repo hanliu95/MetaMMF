@@ -69,7 +69,7 @@ para['train_matrix'] = train_matrix
 para['test_matrix'] = test_matrix
 para['val_matrix'] = val_matrix
 para['train_ui'] = train_ui
-pickle.dump(para, open('./pro_data/tiktok_load.para', 'wb'))
+pickle.dump(para, open('./pro_data/movielens_load.para', 'wb'))
 print('data_load finished...')
 
 
