@@ -11,7 +11,7 @@ class Net(nn.Module):
         self.s_dim = 5
         self.f_dim = 160
         self.n_hidden = 160
-        self.n_output = 64
+        self.n_output = 32
         self.ITEM_NUM = 5986
 
         self.mlp_signal = nn.Sequential(
