@@ -9,13 +9,13 @@ import numpy as np
 class GCN(torch.nn.Module):
     def __init__(self, device):
         super().__init__()
-        self.conv1 = SAGEConv(128, 128)
-        self.conv2 = SAGEConv(128, 64)
+        self.conv1 = SAGEConv(64, 64)
+        self.conv2 = SAGEConv(64, 64)
         self.fus = Net()
         self.USER_NUM = 55485
         self.ITEM_NUM = 5986
         self.device = device
-        self.user = nn.Parameter(torch.nn.init.xavier_uniform_(torch.Tensor(self.USER_NUM, 128)))
+        self.user = nn.Parameter(torch.nn.init.xavier_uniform_(torch.Tensor(self.USER_NUM, 64)))
 
     def forward(self, video, audio, title, edge_index):
         tensor_list = [self.user]
