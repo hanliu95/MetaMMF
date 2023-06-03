@@ -8,20 +8,20 @@ from sklearn.decomposition import PCA
 USER_NUM = 55485
 ITEM_NUM = 5986
 
-video_feature_lookup = np.load('./dataset_sample/movielens/v_feat_sample.npy')  # 2048
-audio_feature_lookup = np.load('./dataset_sample/movielens/a_feat_sample.npy')  # 128
-title_feature_lookup = np.load('./dataset_sample/movielens/t_feat_sample.npy')  # 100
+# video_feature_lookup = np.load('./dataset_sample/movielens/v_feat_sample.npy')  # 2048
+# audio_feature_lookup = np.load('./dataset_sample/movielens/a_feat_sample.npy')  # 128
+# title_feature_lookup = np.load('./dataset_sample/movielens/t_feat_sample.npy')  # 100
 
-pca_v = PCA(n_components=64)
-video_signal_lookup = pca_v.fit_transform(video_feature_lookup)  # size=(item_num, n_components)
-pca_a = PCA(n_components=64)
-audio_signal_lookup = pca_a.fit_transform(audio_feature_lookup)
-pca_t = PCA(n_components=32)
-title_signal_lookup = pca_t.fit_transform(title_feature_lookup)
+# pca_v = PCA(n_components=64)
+# video_signal_lookup = pca_v.fit_transform(video_feature_lookup)  # size=(item_num, n_components)
+# pca_a = PCA(n_components=64)
+# audio_signal_lookup = pca_a.fit_transform(audio_feature_lookup)
+# pca_t = PCA(n_components=32)
+# title_signal_lookup = pca_t.fit_transform(title_feature_lookup)
 
-np.save('./pro_feature/movielens_v_64.npy', video_signal_lookup)
-np.save('./pro_feature/movielens_a_64.npy', audio_signal_lookup)
-np.save('./pro_feature/movielens_t_32.npy', title_signal_lookup)
+# np.save('./pro_feature/movielens_v_64.npy', video_signal_lookup)
+# np.save('./pro_feature/movielens_a_64.npy', audio_signal_lookup)
+# np.save('./pro_feature/movielens_t_32.npy', title_signal_lookup)
 
 whole_dict = np.load('./dataset_sample/tiktok/user_item_dict_sample.npy', allow_pickle=True)
 whole_dict = whole_dict.item()
