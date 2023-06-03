@@ -20,9 +20,9 @@ print('total number of items is ', item_num)
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-video_feature_lookup = np.load('./pro_feature/movielens_v_64.npy')
-audio_feature_lookup = np.load('./pro_feature/movielens_a_64.npy')
-title_feature_lookup = np.load('./pro_feature/movielens_t_32.npy')
+video_feature_lookup = np.load('./dataset_sample/movielens/v_feat_sample.npy')
+audio_feature_lookup = np.load('./dataset_sample/movielens/a_feat_sample.npy')
+title_feature_lookup = np.load('./dataset_sample/movielens/t_feat_sample.npy')
 
 batch_size = 3000
 step_threshold = 500
