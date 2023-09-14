@@ -12,7 +12,7 @@ item_num = para_load['item_num']  # total number of items
 
 train_matrix = para_load['train_matrix']
 train_matrix.data = np.array(train_matrix.data, dtype=np.int8)
-train_matrix = train_matrix.toarray()  # the 0-1 matrix of testing set
+train_matrix = train_matrix.toarray()  # the 0-1 matrix of training set
 test_matrix = para_load['test_matrix']
 test_matrix.data = np.array(test_matrix.data, dtype=np.int8)
 test_matrix = test_matrix.toarray()  # the 0-1 matrix of testing set
